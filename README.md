@@ -7,11 +7,11 @@ Core
 
 1. Create a new react app
 2. Make the app component return <h1>hello world</h1>
-
 3. Add two new components, <Search /> and <Recipes />, just return an h1 in both for now with "on search" and "on recipes"
 4. Add these components to to <App />, remove the "hello world"
 5. Create a new component <Form />, it should render a form with 1 input:text for searching and an input:submit
 6. Render the <Form /> in the <Search /> component, remove the "on search"
+
 7. Add an onChange event handler to the search input in the form, ensure that the state for search is set every time something is typed
 8. Add an onSubmit event handler for the form, this event handler should be defined in <Form /> and preventDefault()
 9. Add a new function in <App /> named searchRecipes() it should take a search as a parameter, you then need to pass this function as a prop through <Search /> and <Form />

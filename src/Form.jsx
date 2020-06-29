@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 class Form extends React.Component {
     constructor(props) {
       super(props);
@@ -7,10 +9,12 @@ class Form extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
-  
+
     handleChange(event) {    this.setState({value: event.target.value});  }
     handleSubmit(event) {
-      alert('Search: ' + this.state.value);
+        console.log("from handleSubmit" + " " + this.state.value)
+        // 8. Add an onSubmit event handler for the form, this event handler should be defined in <Form /> and preventDefault()
+
       event.preventDefault();
     }
   
@@ -19,10 +23,18 @@ class Form extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Search:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />        </label>
-          <input type="submit" value="Submit" />
+            <input 
+            type="text" 
+            value={this.state.value} 
+            onChange={this.handleChange} />       
+             </label>
+          <input 
+          type="submit" 
+          value="Submit" />
         </form>
       );
     }
   }
+
+  
 export default Form;

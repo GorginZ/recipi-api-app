@@ -5,10 +5,8 @@ class Search extends React.Component {
     render() {
         return (
             <div>
-                <h1>On search</h1>
                 <Form>
-
-                </Form>
+\                </Form>
             </div>
         );
     }
